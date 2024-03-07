@@ -7,6 +7,7 @@
     width: 100%;
     /* permite que elementos tenham posições ABSOLUTAS dentro do cabeçalho */
     position: relative;
+    border-bottom:1px solid #c1c1c1;
 }
 
 .logomarca {
@@ -57,4 +58,5 @@
 .rodape {
     height: 400px;
     background-color: #dbdbdb;
+    padding-top:30px;
 }

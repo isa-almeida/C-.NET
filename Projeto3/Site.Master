@@ -19,7 +19,7 @@
     <form id="form1" runat="server">
 
         <!-- CABEÇALHO-->
-        <div class="cabecalho">
+        <div class="cabecalho content-wrap">
 
             <!-- LOGOMARCA -->
             <div class="logomarca">
@@ -42,14 +42,19 @@
         </div>
 
         <!-- ÁREA DO CONTEÚDO -->
-        <div class="conteudo">
+        <div class="conteudo content-wrap">
             <asp:ContentPlaceHolder ID="Conteudo" runat="server">
             </asp:ContentPlaceHolder>
         </div>
 
         <!-- RODAPÉ -->
         <div class="rodape">
+            <div class="content-wrap">
+                <h3>Análise e Desenvolvimento de Sistemas</h3>
+                <h4>Programação em C#</h4>
+            </div>
         </div>
+
 
     </form>
 </body>
