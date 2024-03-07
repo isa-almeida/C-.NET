@@ -13,13 +13,18 @@
     <link href="Css/StyleSheet.css" rel="stylesheet" />
     <link href="Css/Projeto.css" rel="stylesheet" />
 
+    <!-- BIBLIOTECAS JS PARA EXIBIR BANNERS -->
+    <link href="Js/flexslider.css" rel="stylesheet" />
+    <script src="Js/jquery-1.7.2.min.js"></script> <!-- TEM QUE SER O PRIMEIRO JS A SER COLOCADO -->
+    <script src="Js/flexslider.min.js"></script>
+
 </head>
 
 <body>
     <form id="form1" runat="server">
 
         <!-- CABEÇALHO-->
-        <div class="cabecalho">
+        <div class="cabecalho content-wrap">
 
             <!-- LOGOMARCA -->
             <div class="logomarca">
@@ -32,19 +37,29 @@
 
             <!-- BARRA DE MENU -->
             <div class="barra-menu">
+                <a href="Default.aspx">HOME</a>
+                <a href="FaleConosco.aspx">
+                    <img width="40px" title="Fale Conosco" src="Images/icon_faleconosco.png" /> 
+
+                </a>
             </div>
 
         </div>
 
         <!-- ÁREA DO CONTEÚDO -->
-        <div class="conteudo">
+        <div class="conteudo content-wrap">
             <asp:ContentPlaceHolder ID="Conteudo" runat="server">
             </asp:ContentPlaceHolder>
         </div>
 
         <!-- RODAPÉ -->
         <div class="rodape">
+            <div class="content-wrap">
+                <h3>Análise e Desenvolvimento de Sistemas</h3>
+                <h4>Programação em C#</h4>
+            </div>
         </div>
+
 
     </form>
 </body>
