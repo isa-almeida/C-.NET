@@ -32,6 +32,11 @@
 
             <!-- BARRA DE MENU -->
             <div class="barra-menu">
+                <a href="Default.aspx">HOME</a>
+                <a href="FaleConosco.aspx">
+                    <img width="40px" title="Fale Conosco" src="Images/icon_faleconosco.png" /> 
+
+                </a>
             </div>
 
         </div>
