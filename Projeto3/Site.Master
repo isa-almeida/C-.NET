@@ -13,6 +13,11 @@
     <link href="Css/StyleSheet.css" rel="stylesheet" />
     <link href="Css/Projeto.css" rel="stylesheet" />
 
+    <!-- BIBLIOTECAS JS PARA EXIBIR BANNERS -->
+    <link href="Js/flexslider.css" rel="stylesheet" />
+    <script src="Js/jquery-1.7.2.min.js"></script> <!-- TEM QUE SER O PRIMEIRO JS A SER COLOCADO -->
+    <script src="Js/flexslider.min.js"></script>
+
 </head>
 
 <body>
