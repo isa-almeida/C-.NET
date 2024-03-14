@@ -89,6 +89,7 @@ html[xmlns] .slides {
 .carousel li {
     margin-right: 5px;
 }
+/* SETAS DIRECIONAIS DO BANNER */
 
 /* Direction Nav */
 .flex-direction-nav {
@@ -109,11 +110,20 @@ html[xmlns] .slides {
         cursor: pointer;
         color: rgba(0,0,0,0.8);
         text-shadow: 1px 1px 0 rgba(255,255,255,0.3);
-        -webkit-transition: all .3s ease;
-        -moz-transition: all .3s ease;
-        transition: all .3s ease;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
-
+        .flex-direction-nav a:before {
+            font-family: "flexslider-icon";
+            font-size: 40px;
+            display: inline-block;
+            content: '\f001';
+            color: rgba(0, 0, 0, 0.8);
+            text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+        }
     .flex-direction-nav .flex-prev {
         left: 50px;
     }
@@ -142,20 +152,91 @@ html[xmlns] .slides {
 
 .flex-direction-nav .flex-disabled {
     opacity: 0!important;
-    filter: alpha(opacity=0);
+    filter: alpha(opacity=0);e
     cursor: default;
 }
 
 .flex-direction-nav a:before {
-    font-family: FontAwesome;
+    font-family: "flexslider-icon";
     font-size: 40px;
     display: inline-block;
-    content: '\f104';
+    content: '\f001';
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+
+}
+/* teste*/
+.flex-direction-nav a.flex-next:before {
+    content: '\f002';
 }
 
-.flex-direction-nav a.flex-next:before {
-    content: '\f105';
+.flex-direction-nav .flex-prev {
+    left: -50px;
 }
+
+.flex-direction-nav .flex-next {
+    right: -50px;
+    text-align: right;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev {
+    opacity: 0.7;
+    left: 10px;
+}
+
+    .flexslider:hover .flex-direction-nav .flex-prev:hover {
+        opacity: 1;
+    }
+
+.flexslider:hover .flex-direction-nav .flex-next {
+    opacity: 0.7;
+    right: 10px;
+}
+
+    .flexslider:hover .flex-direction-nav .flex-next:hover {
+        opacity: 1;
+    }
+
+.flex-direction-nav .flex-disabled {
+    opacity: 0 !important;
+    filter: alpha(opacity=0);
+    cursor: default;
+    z-index: -1;
+}
+
+.flex-pauseplay a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    opacity: 0.8;
+    z-index: 10;
+    overflow: hidden;
+    cursor: pointer;
+    color: #000;
+}
+
+    .flex-pauseplay a:before {
+        font-family: "flexslider-icon";
+        font-size: 20px;
+        display: inline-block;
+        content: '\f004';
+    }
+
+    .flex-pauseplay a:hover {
+        opacity: 1;
+    }
+
+    .flex-pauseplay a.flex-play:before {
+        content: '\f003';
+    }
+
+.flex-direction-nav a.flex-next:before {
+    content: '\f002';
+}
+
 
 /* Control Nav */
 .flex-control-nav {
