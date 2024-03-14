@@ -113,7 +113,6 @@ hr {
 
 .box {
     padding: 14px;
-    height:100%;
 }
 
 .border {
@@ -140,6 +139,9 @@ hr {
     text-align:right;
 }
 
+.min-height-400{
+    min-height:400px;
+}
 
 /*******************************************************************
 CONTROLES DE FORMULÁRIOS
