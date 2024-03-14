@@ -20,9 +20,15 @@ namespace Projeto3
             {
                 Mensagem.Text = "Digite seu nome";
             }
-            else
-            {
-                string conteudo = Nome.Text + "\n";
+            else if (Telefone.Text == "")
+                {
+                    Mensagem.Text = "Digite seu telefone";
+                }
+                else if (Email.Text == "")
+                    {
+                        Mensagem.Text = "Digite seu telefone";
+                    }
+                    else if (string conteudo = Nome.Text + "\n");
                 conteudo += Email.Text + "\n";
                 conteudo += Telefone.Text + "\n";
                 conteudo += "------------------------------------\n";
