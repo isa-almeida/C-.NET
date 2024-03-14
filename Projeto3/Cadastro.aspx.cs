@@ -16,18 +16,25 @@ namespace Projeto3
 
         protected void Enviar_Click(object sender, EventArgs e)
         {
-            string conteudo = Nome.Text + "\n";
-            conteudo += Email.Text + "\n";
-            conteudo += Telefone.Text + "\n";
-            conteudo +="------------------------------------\n";
+            if (Nome.Text == "") //se os campos retornarem vazios, exibe mensagem
+            {
+                Mensagem.Text = "Digite seu nome";
+            }
+            else
+            {
+                string conteudo = Nome.Text + "\n";
+                conteudo += Email.Text + "\n";
+                conteudo += Telefone.Text + "\n";
+                conteudo += "------------------------------------\n";
 
-            string caminho = Server.MapPath("~/Cadastro.txt"); //mapeia caminho do projeto
-            System.IO.File.AppendAllText(caminho,conteudo); //recebe caminho e o valor do metodo conteudo
+                string caminho = Server.MapPath("~/Cadastro.txt"); //mapeia caminho do projeto
+                System.IO.File.AppendAllText(caminho, conteudo); //recebe caminho e o valor do metodo conteudo
 
-            Nome.Text = "";
-            Email.Text = "";
-            Telefone.Text = "";
-
+                //após inserção, os campos voltam a ficar vazios
+                Nome.Text = "";
+                Email.Text = "";
+                Telefone.Text = "";
+            }
         }
     }
 }
