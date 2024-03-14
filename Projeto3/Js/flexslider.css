@@ -89,6 +89,7 @@ html[xmlns] .slides {
 .carousel li {
     margin-right: 5px;
 }
+/* SETAS DIRECIONAIS DO BANNER */
 
 /* Direction Nav */
 .flex-direction-nav {
@@ -151,7 +152,7 @@ html[xmlns] .slides {
 
 .flex-direction-nav .flex-disabled {
     opacity: 0!important;
-    filter: alpha(opacity=0);
+    filter: alpha(opacity=0);e
     cursor: default;
 }
 
