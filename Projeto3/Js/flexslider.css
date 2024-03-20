@@ -110,12 +110,11 @@ html[xmlns] .slides {
         cursor: pointer;
         color: rgba(0,0,0,0.8);
         text-shadow: 1px 1px 0 rgba(255,255,255,0.3);
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        transition: all .3s ease;
     }
+
         .flex-direction-nav a:before {
             font-family: "flexslider-icon";
             font-size: 40px;
@@ -150,11 +149,6 @@ html[xmlns] .slides {
         color: #fff;
     }
 
-.flex-direction-nav .flex-disabled {
-    opacity: 0!important;
-    filter: alpha(opacity=0);e
-    cursor: default;
-}
 
 .flex-direction-nav a:before {
     font-family: "flexslider-icon";
@@ -233,12 +227,13 @@ html[xmlns] .slides {
         content: '\f003';
     }
 
-.flex-direction-nav a.flex-next:before {
+    .flex-direction-nav a.flex-next:before {
     content: '\f002';
 }
 
 
 /* Control Nav */
+
 .flex-control-nav {
     width: 100%;
     position: absolute;

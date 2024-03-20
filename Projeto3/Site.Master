@@ -17,6 +17,8 @@
     <link href="Js/flexslider.css" rel="stylesheet" />
     <script src="Js/jquery-1.7.2.min.js"></script> <!-- TEM QUE SER O PRIMEIRO JS A SER COLOCADO -->
     <script src="Js/flexslider.min.js"></script>
+   <!-- <script src="https://kit.fontawesome.com/2cfa6a23a4.js"></script> -->
+    <script src="~/flexslider-icon.ttf"></script>
 
 </head>
 
@@ -39,7 +41,7 @@
             <div class="barra-menu">
                 <a href="Default.aspx">HOME</a>
                 <a href="FaleConosco.aspx">
-                    <img width="40px" title="Fale Conosco" src="Images/icon_faleconosco.png" /> 
+                    <img width="40px" title="Fale Conosco" src="/Images/icon_faleconosco.png" /> 
 
                 </a>
             </div>
@@ -60,7 +62,7 @@
             </div>
         </div>
 
-
+  
     </form>
 </body>
 </html>

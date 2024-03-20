@@ -26,21 +26,24 @@ namespace Projeto3
                 }
                 else if (Email.Text == "")
                     {
-                        Mensagem.Text = "Digite seu telefone";
+                        Mensagem.Text = "Digite seu e-mail";
                     }
-                    else if (string conteudo = Nome.Text + "\n");
-                conteudo += Email.Text + "\n";
-                conteudo += Telefone.Text + "\n";
-                conteudo += "------------------------------------\n";
+                    
+            else
+                    { 
+                        string conteudo = Nome.Text + "\n";
+                        conteudo += Email.Text + "\n";
+                        conteudo += Telefone.Text + "\n";
+                        conteudo += "------------------------------------\n";
 
-                string caminho = Server.MapPath("~/Cadastro.txt"); //mapeia caminho do projeto
-                System.IO.File.AppendAllText(caminho, conteudo); //recebe caminho e o valor do metodo conteudo
+                        string caminho = Server.MapPath("~/Cadastro.txt"); //mapeia caminho do projeto
+                        System.IO.File.AppendAllText(caminho, conteudo); //recebe caminho e o valor do metodo conteudo
 
-                //após inserção, os campos voltam a ficar vazios
-                Nome.Text = "";
-                Email.Text = "";
-                Telefone.Text = "";
-            }
+                        //após inserção, os campos voltam a ficar vazios
+                        Nome.Text = "";
+                        Email.Text = "";
+                        Telefone.Text = "";
+                    }
         }
     }
 }
